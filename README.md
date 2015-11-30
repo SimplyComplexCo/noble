@@ -14,7 +14,7 @@ __Note:__ Mac OS X, Linux and Windows are currently the only supported OSes. Oth
 
  * install [Xcode](https://itunes.apple.com/ca/app/xcode/id497799835?mt=12)
 
-### Linux (Ubuntu)
+### Linux
 
  * Kernel version 3.6 or above
  * ```libbluetooth-dev```
@@ -24,6 +24,10 @@ __Note:__ Mac OS X, Linux and Windows are currently the only supported OSes. Oth
 ```sh
 sudo apt-get install bluetooth bluez-utils libbluetooth-dev libudev-dev
 ```
+
+Make sure ```node``` is on your path, if it's not, some options:
+ * symlink ```nodejs``` to ```node```: ```sudo ln -s /usr/bin/nodejs /usr/bin/node```
+ * [install Node.js using the NodeSource package](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
 
 #### Fedora / Other-RPM based
 
@@ -43,6 +47,16 @@ See [Configure Intel Edison for Bluetooth LE (Smart) Development](http://rexstjo
  * [node-bluetooth-hci-socket prerequisites](https://github.com/sandeepmistry/node-bluetooth-hci-socket#windows)
    * Compatible Bluetooth 4.0 USB adapter
    * [WinUSB](https://msdn.microsoft.com/en-ca/library/windows/hardware/ff540196(v=vs.85).aspx) driver setup for Bluetooth 4.0 USB adapter, using [Zadig tool](http://zadig.akeo.ie/)
+
+## Notes
+
+### Maximum simulanteous connections
+
+| Platform |     |
+| :------- | --- |
+| OS X 10.11 (El Capitan) | 6 |
+| Linux/Windows - Adapter dependent | |
+| | 5 (CSR based adapter) |
 
 ## Install
 

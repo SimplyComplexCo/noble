@@ -1,3 +1,19 @@
+## Version 1.2.1
+
+ * Use latest v0.4.1 bluetooth-hci-socket dependency (for kernel 4.1.x disconnect workaround)
+ * Add read + write LE host supported commands (for kernel 4.1.x disconnect workaround)
+ * Fix a potential exception when accessing a non existent element ([@Loghorn](https://github.com/Loghorn))
+
+## Version 1.2.0
+
+ * Use v0.4.0 of bluetooth-hci-socket
+ * Ignore peripherals with only connectable flag on OS X 10.10
+ * Bindings no longer init themselves
+ * Fix this._discoveredPeripheralUUids = []; variable not initalized in constructor ([@jacobrosenthal](https://github.com/jacobrosenthal))
+ * New ```peripheral.connectable``` property
+ * Updates to Linux prerequisites in read me
+ * Throw error if scanning is started when state is not powered on
+
 ## Version 1.1.0
 
  * Introduce ```peripheral.id```, ```periheral.uuid``` is deprecated now
