@@ -31,11 +31,7 @@
     "debug": "~2.2.0"
   },
   "optionalDependencies": {
-<<<<<<< HEAD
     "bluetooth-hci-socket": "github:SimplyComplexCo/node-bluetooth-hci-socket#electron",
-=======
-    "bluetooth-hci-socket": "~0.4.1",
->>>>>>> tags/v1.2.1
     "bplist-parser": "0.0.6",
     "xpc-connection": "~0.1.4"
   },
